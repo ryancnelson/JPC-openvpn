@@ -1,4 +1,4 @@
-All: .apt-get-updated .openvpn-installed .bounce-things /root/openvpn/static.key /etc/openvpn/joyentcloud.conf /root/openvpn/openvpn-client.conf /etc/default/openvpn .explain-things 
+All: .apt-get-updated .openvpn-installed /root/openvpn/static.key /etc/openvpn/joyentcloud.conf /root/openvpn/openvpn-client.conf /etc/default/openvpn .explain-things .bounce-things
 
 PUBIP = $(shell ifconfig eth0 | grep 'inet addr' | perl -pe 's/.*inet addr:(.*)  Bca.*/\1/' )
 PRIVIP = $(shell ifconfig eth1 | grep 'inet addr' | perl -pe 's/.*inet addr:(.*)  Bca.*/\1/' )

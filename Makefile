@@ -20,6 +20,7 @@ realclean:
 	echo proto tcp-client >> /root/openvpn/openvpn-client.conf
 	echo ifconfig 10.77.88.2 10.77.88.1  >> /root/openvpn/openvpn-client.conf
 	echo secret /root/openvpn/static.key >> /root/openvpn/openvpn-client.conf
+	echo redirect-gateway def1 >> /root/openvpn/openvpn-client.conf
 
 /root/openvpn/static.key:
 	@### yes, i know this is a really ugly hack

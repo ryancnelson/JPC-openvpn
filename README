@@ -1,0 +1,21 @@
+How to use this:
+
+- provision a new Ubuntu 12.04 Linux VM in the Joyent Public Cloud
+  and ssh into it.
+  (this can be a 512MB VM... it's very low-overhead)
+
+- apt-get update
+
+- apt-get install -y git make
+
+- git clone https://ryancnelson@bitbucket.org/ryancnelson/jpc-openvpn.git 
+
+- cd jpc-openvpn ; make
+
+- Follow the on-screen instructions to copy the static.key file and the 
+  client.conf file to your local machine.
+  Adjust the file pathnames in client.conf as needed, and start openvpn with 
+  that config file.
+  EXAMPLE CLIENT START-UP:  openvpn --config client.conf
+  (on my Mac, using http://code.google.com/p/tunnelblick/ , works ok )
+  

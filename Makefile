@@ -4,12 +4,14 @@ PUBIP = $(shell ifconfig eth0 | grep 'inet addr' | perl -pe 's/.*inet addr:(.*) 
 PRIVIP = $(shell ifconfig eth1 | grep 'inet addr' | perl -pe 's/.*inet addr:(.*)  Bca.*/\1/' )
 
 clean:
+	rm -f .apt-get-updated .openvpn-installed 
 
 realclean:
 	make clean
 	rm -f .openvpn-installed
 	rm -f .apt-get-updated
 	rm -f .ipv4-forwarding-on
+	rm -rf /root/openvpn/static.key /etc/openvpn/joyentcloud.conf /root/openvpn/openvpn-client.conf 
 
 /etc/default/openvpn:
 	grep joyentcloud /etc/default/openvpn || echo AUTOSTART=\"joyentcloud\" >> /etc/default/openvpn 

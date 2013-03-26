@@ -1,5 +1,5 @@
 apt-get update
 apt-get install -y git make
 git clone https://github.com/ryancnelson/JPC-openvpn.git
-cd jpc-openvpn ; make
+cd JPC-openvpn ; make
 

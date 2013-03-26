@@ -38,6 +38,7 @@ realclean:
 	echo "proto tcp-server" >> /etc/openvpn/joyentcloud.conf
 	echo "ifconfig 10.77.88.1 10.77.88.2" >> /etc/openvpn/joyentcloud.conf
 	echo "secret /root/openvpn/static.key" >> /etc/openvpn/joyentcloud.conf
+	echo redirect-gateway def1 >> /root/openvpn/joyentcloud.conf
 
 .ipv4-forwarding-on:
 	echo 1 > /proc/sys/net/ipv4/ip_forward

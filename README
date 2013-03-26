@@ -2,7 +2,7 @@ How to use this:
 
 SUPER-FAST-SETUP:
   provision an Ubuntu 12.04 VM in the JPC, log in, run this:
-  " curl https://bitbucket.org/ryancnelson/jpc-openvpn/raw/89a70015b8872e6f608092063e4c3fcaf6febdf6/bootstrap | sh "
+  " curl https://raw.github.com/ryancnelson/JPC-openvpn/master/bootstrap| sh "
 
 -----
 

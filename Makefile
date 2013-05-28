@@ -63,10 +63,10 @@ realclean:
 	@make /root/openvpn/openvpn-client.conf && echo && echo "Your openvpn client configuration file is at /root/openvpn/openvpn-client.conf ."  && echo "Copy that file to your client host, and run \"openvpn --config /path/to/openvpn-client.conf"
 	@echo "---- begin /root/openvpn/openvpn-client.conf ----"
 	@cat /root/openvpn/openvpn-client.conf	
-	@echo "---- echo /root/openvpn/openvpn-client.conf ----"
+	@echo "---- end /root/openvpn/openvpn-client.conf ----"
 	@ echo ; echo ; echo
 	@ echo "put this in in your client's path for the static.key:" ; echo 
-	@echo "---- echo /root/openvpn/static.key ----"
+	@echo "---- begin /root/openvpn/static.key ----"
 	@cat /root/openvpn/static.key	
 	@echo "---- end /root/openvpn/static.key ----"
 

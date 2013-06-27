@@ -16,7 +16,7 @@ Normal setup:
 
 - apt-get install -y git make
 
-- git clone https://ryancnelson@bitbucket.org/ryancnelson/jpc-openvpn.git 
+- git clone https://github.com/ryancnelson/JPC-openvpn.git 
 
 - cd jpc-openvpn ; make
 
@@ -27,3 +27,9 @@ Normal setup:
   EXAMPLE CLIENT START-UP:  openvpn --config client.conf
   (on my Mac, using http://code.google.com/p/tunnelblick/ , works ok )
   
+
+-----
+Notes:  this is a quick setup, work-in-progress.  Please let me know how it works for you.  The single-user
+nature of the static key setup means that you'll probably want to use this specific configuration just for
+an ad-hoc vpn for yourself.  See the openswan documentation for more "enterprisey" deployment/configuration 
+strategies.
